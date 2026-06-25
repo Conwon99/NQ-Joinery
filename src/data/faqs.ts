@@ -11,19 +11,23 @@ const cities = citiesLabel();
 export const homepageFaqs: FaqItem[] = [
   {
     question: "Do you offer free quotes?",
-    answer: `Yes. Contact ${brand} by phone or message with details of your enquiry and we can discuss a free quote.`,
+    answer: `Yes. Contact ${brand} by phone or message with details of your job and we will provide a free, no-obligation quote. Photos of the area are always helpful.`,
   },
   {
     question: "What areas do you cover?",
-    answer: `${brand} serves ${cities} and surrounding areas in ${business.region}. If you are nearby, get in touch and we can confirm availability.`,
+    answer: `${brand} serves ${cities} and surrounding areas across ${business.region}, including Pollok, Darnley, Clarkston, Newton Mearns, Barrhead, Shawlands and more. Get in touch to confirm coverage for your postcode.`,
+  },
+  {
+    question: "What joinery and flooring services do you offer?",
+    answer: `${brand} installs laminate flooring (standard and chevron styles), fits skirting boards, carries out general joinery and carpentry (shelving, panelling, doorway alterations), and installs or replaces fencing.`,
   },
   {
     question: "How do I get started?",
-    answer: `Call ${brand} or use the contact form with a brief description of the work and your location. Photos are helpful.`,
+    answer: `Call ${brand} or send a message through the contact form with a brief description of the work and your location. Photos are helpful for getting a quick and accurate quote.`,
   },
   {
-    question: "Do you handle outdoor and home service work?",
-    answer: `Yes. ${brand} handles a range of home and outdoor services with tidy workmanship and free quotes.`,
+    question: "Can you work across multiple rooms in one visit?",
+    answer: `Yes. ${brand} handles multi-room flooring and joinery jobs. Provide the full scope when enquiring so an accurate quote can be put together.`,
   },
 ];
 
