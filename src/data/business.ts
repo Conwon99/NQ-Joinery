@@ -54,42 +54,46 @@ export type BusinessConfig = {
 };
 
 export const business: BusinessConfig = {
-  businessName: "Your Business Name — Home Services",
-  alternateName: "Your Brand",
-  tagline: "Professional home services with tidy workmanship and free quotes.",
-  gbpCategory: "Home Services",
+  businessName: "NQ Joinery | Glasgow",
+  alternateName: "NQ Joinery",
+  tagline: "Tidy joinery and flooring work across Glasgow. Free quotes.",
+  gbpCategory: "Carpenter",
 
-  phone: "+44 7000 000000",
-  phoneDisplay: "+44 7000 000000",
-  phoneLocal: "07000 000000",
-  trackingPhone: "+44 7000 000001",
-  trackingPhoneLocal: "07000 000001",
+  phone: "+44 7375 514379",
+  phoneDisplay: "+44 7375 514379",
+  phoneLocal: "07375 514379",
+  trackingPhone: null,
+  trackingPhoneLocal: null,
 
-  email: "hello@yourbusiness.co.uk",
-  siteUrl: "https://www.yourbusiness.co.uk",
-  facebookUrl: "https://www.facebook.com/yourbusiness",
-  googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Your+Business+Name",
+  email: "hello@nqjoineryglasgow.co.uk",
+  siteUrl: "https://www.nqjoineryglasgow.co.uk",
+  facebookUrl: "https://www.facebook.com/profile.php?id=61580904917513",
+  googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=NQ+Joinery+Glasgow",
   whatsappUrl: null,
 
-  primaryCity: "Primary City",
-  secondaryCity: "Secondary City",
-  region: "Your Region",
+  primaryCity: "Glasgow",
+  secondaryCity: "Giffnock",
+  region: "Greater Glasgow",
   geoRegion: "GB-SCT",
 
   address: {
-    addressLocality: "Primary City",
-    addressRegion: "Your Region",
+    addressLocality: "Glasgow",
+    addressRegion: "Greater Glasgow",
     addressCountry: "GB",
   },
 
-  mapCenter: [56.0, -3.5],
+  mapCenter: [55.8617, -4.2583],
   serviceAreaPolygon: [
-    [55.8, -4.0],
-    [55.8, -3.0],
-    [56.2, -2.8],
-    [56.4, -3.2],
-    [56.3, -3.9],
-    [55.8, -4.0],
+    [55.8617, -4.2583],
+    [55.8900, -4.3500],
+    [55.9100, -4.2800],
+    [55.9000, -4.1500],
+    [55.8500, -4.1000],
+    [55.7800, -4.1500],
+    [55.7600, -4.2800],
+    [55.7900, -4.3800],
+    [55.8300, -4.4200],
+    [55.8617, -4.2583],
   ],
 
   assets: {
@@ -100,18 +104,18 @@ export const business: BusinessConfig = {
   },
 
   serviceTypes: [
-    "Primary service installation",
-    "Primary service repairs",
-    "Secondary service",
-    "Garden and outdoor improvements",
-    "Free quotes",
+    "Laminate Flooring Installation",
+    "Skirting Board Installation",
+    "Joinery and Carpentry",
+    "Fencing Installation",
+    "Free Quotes",
   ],
 
   openingHours: [
     {
-      dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+      dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
       opens: "08:00",
-      closes: "18:00",
+      closes: "20:00",
     },
   ],
 
@@ -137,20 +141,20 @@ export const brandName = () => business.alternateName;
 export const citiesLabel = () => `${business.primaryCity} & ${business.secondaryCity}`;
 
 export const homepageTitle = () =>
-  `${business.alternateName} | Home Services in ${citiesLabel()}`;
+  `${business.alternateName} | Joinery & Flooring in ${citiesLabel()}`;
 
 export const homepageDescription = () =>
   truncateMeta(
-    `${business.alternateName} provides professional home services across ${citiesLabel()} and ${business.region}. Free quotes available.`,
+    `${business.alternateName} provides laminate flooring, joinery, and fencing across ${citiesLabel()} and ${business.region}. Free quotes available.`,
   );
 
-export const homepageH1 = () => `Home Services in ${citiesLabel()}`;
+export const homepageH1 = () => `Joinery & Flooring in ${citiesLabel()}`;
 
 export const defaultKeywords = () =>
-  `home services ${business.primaryCity}, ${business.secondaryCity}, ${business.alternateName}, free quote`;
+  `joinery Glasgow, laminate flooring Glasgow, ${business.secondaryCity}, ${business.alternateName}, free quote`;
 
 export const defaultOgImageAlt = () =>
-  `${business.alternateName} home services in ${citiesLabel()}`;
+  `${business.alternateName} joinery and flooring work in ${citiesLabel()}`;
 
 export const schemaImages = (): string[] => [
   absoluteUrl(business.assets.logo),
