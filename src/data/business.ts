@@ -97,10 +97,17 @@ export const business: BusinessConfig = {
   ],
 
   assets: {
-    hero: "/hero.jpg",
+    hero: "/nqjoineryglasgow-hero.jpg",
     logo: "/logo.png",
-    about: "/about.jpg",
-    gallery: ["/gal_01.jpg", "/gal_02.jpg", "/gal_03.jpg", "/gal_04.jpg", "/gal_05.jpg", "/gal_06.jpg"],
+    about: "/nqjoineryglasgow-about.jpg",
+    gallery: [
+      "/nqjoineryglasgow-gal-01.jpg",
+      "/nqjoineryglasgow-gal-02.jpg",
+      "/nqjoineryglasgow-gal-03.jpg",
+      "/nqjoineryglasgow-gal-04.jpg",
+      "/nqjoineryglasgow-gal-05.jpg",
+      "/nqjoineryglasgow-gal-06.jpg",
+    ],
   },
 
   serviceTypes: [

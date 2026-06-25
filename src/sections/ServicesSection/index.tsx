@@ -10,7 +10,7 @@ export const ServicesSection = () => {
             Our Services
           </h2>
           <p className="text-gray-200 max-w-3xl mx-auto mt-4">
-            Reliable outdoor improvements across Perthshire, Dundee and nearby areas.
+            Laminate flooring, joinery, carpentry and fencing across Glasgow and surrounding areas.
           </p>
         </div>
         <div className="box-border caret-transparent gap-x-[30px] grid auto-cols-[1fr] grid-cols-[1fr] grid-rows-[auto] gap-y-[30px] md:grid-cols-[1fr_1fr_1fr]">
