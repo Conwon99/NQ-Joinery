@@ -98,7 +98,7 @@ export const business: BusinessConfig = {
 
   assets: {
     hero: "/nqjoineryglasgow-hero.jpg",
-    logo: "/logo.png",
+    logo: "/nqjoineryglasgow-logo.png",
     about: "/nqjoineryglasgow-about.jpg",
     gallery: [
       "/nqjoineryglasgow-gal-01.jpg",
